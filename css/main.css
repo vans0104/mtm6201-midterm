@@ -1,11 +1,7 @@
 /* Media query for desktop screens */
-@media (min-width: 1024px)
- body {
-        padding: 0 20px; /* Add padding to the body on larger screens */
-    }
-
 html{
     min-width: 1200px;
+    margin: 10em;
 }
 
 /* Reset some default styles */
@@ -13,6 +9,16 @@ body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    color: #333;
+    text-align: center;
+    margin-top: 500px;
+    margin-left: 150px;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -24,28 +30,43 @@ body {
 header {
     color: black;
     padding: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
+header {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding to the header for spacing */
 }
+
+.header-title {
+    margin-right: 20px; /* Add margin between the title and image */
+}
+
+.header-image {
+    max-width: 100%; /* Set a maximum width for the image */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
 
 nav ul {
     list-style-type: none;
+    font-size: 30px;
     display: flex;
     text-align: center;
 }
 
 nav ul li {
-    margin: 50px;
+    margin-left: 200px;
     text-align: center;
 }
 
 nav ul li a {
-    color: black;
+    color: #333;
+    font-size: 30px;
     text-decoration: none;
     text-align: center;
 }
@@ -54,13 +75,44 @@ nav ul li a:hover {
     color: darkblue;
     text-decoration: underline;
 }
+
+nav {
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the list items as flex items */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove right margin from the last navigation item */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #555;
+}
+
 .signin-button {
     color: black; 
     background-color: #f8f9fa;
     font-weight: bold;
     padding: 10px 20px; 
     border: none;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer; 
 }
 
@@ -74,8 +126,8 @@ nav ul li a:hover {
     padding: 10px 20px; 
     font-weight: bold;
     border: red 2px solid;
-    border-radius: 7rem;
-    font-size: 16px;
+    border-radius: 5rem;
+    font-size: 30px;
     cursor: pointer; 
 }
 .signup-button:hover {
@@ -83,18 +135,32 @@ nav ul li a:hover {
     border: #333;
 }
 
+article {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5em;
+    margin-bottom: 8em;
+    margin-top: 0;
+}
+
 .learn-more-button {
     background-color: red; 
     color: #fff; 
+    height: 15rem;
     padding: 10px 20px; 
-    font-size: 16px; 
-    border: none; 
-    border-radius: 5px; 
+    font-size: 50px; 
+    font-weight: bold;
+    border: none;
+    margin-top: 10px; 
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    margin-left: 20px; 
+    border-radius: 15px; 
     cursor: pointer; 
     transition: background-color 0.3s ease; 
 }
 
-.get-started-button:hover {
+.learn-more-button:hover {
     background-color: #218838; /* Darker green color on hover */
 }
 
@@ -104,7 +170,6 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
