@@ -3,6 +3,10 @@ html{
     min-width: 1200px;
     margin: 10em;
 }
+.container {
+    width: 1200px;
+    max-width: 100%;
+  }
 
 /* Reset some default styles */
 body, h1, h2, p, ul {
