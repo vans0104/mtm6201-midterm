@@ -4,8 +4,7 @@ html{
     margin: 10em;
 }
 .container {
-    width: 1200px;
-    max-width: 100%;
+    max-width: 1200px;
   }
 
   .container {
@@ -60,7 +59,7 @@ header {
 
 .header-image, .features-image, .about-image {
     display: flex; /* Use flexbox to align items horizontally */
-    size-adjust: 100p%;
+    size-adjust: 100%;
     max-width: 100%; /* Maximum width for the image */
     height: auto; /* Allowing the height to adjust proportionally */
 }
