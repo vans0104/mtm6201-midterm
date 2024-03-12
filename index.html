@@ -32,7 +32,15 @@
     <header>
         <!-- home page -->
         <h1 class="header-title">Maika van Stralen: A Portfolio Piece</h1>
-        <img src="images/Screenshot 2024-03-11 at 20.02.34.png" alt="" class="header-image">
+        <img 
+        srcset="images/Screenshot 2024-03-11 at 20.02.34.png 320w,
+                images/Screenshot 2024-03-11 at 20.02.34.png 640w,
+                images/Screenshot 2024-03-11 at 20.02.34.png 1024w"
+        sizes="(max-width: 320px) 320px,
+              (max-width: 640px) 640px,
+              (max-width: 1024px) 1024px"
+        src="images/Screenshot 2024-03-11 at 20.02.34.png"
+        alt="" class="header-image">
     </header>
     <article><p>In between coding marathons, she finds solace in the melodies of jazz.</p></article>
 
@@ -43,13 +51,6 @@
 
     </section>
 
-    <!-- about page -->
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>Welcome to my portfolio website. Here I will share my designs and creations in hopes of inspiring you!</p>
-        </section>
-    </main>
 </container>
 
     <footer>

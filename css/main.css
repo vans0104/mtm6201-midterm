@@ -8,6 +8,13 @@ html{
     max-width: 100%;
   }
 
+  .container {
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
+  }
+
+
 /* Reset some default styles */
 body, h1, h2, p, ul {
     margin: 0;
@@ -21,7 +28,7 @@ body, h1, h2, p, ul {
     text-align: center;
     margin-top: 500px;
     margin-left: 150px;
-    
+
 }
 
 
@@ -48,12 +55,14 @@ header {
 }
 
 .header-title, .features-title, .about-title{
-    margin-right: 20px; /* Add margin between the title and image */
+    margin-right: 20px; 
 }
 
 .header-image, .features-image, .about-image {
-    max-width: 100%; /* Set a maximum width for the image */
-    height: auto; /* Allow the height to adjust proportionally */
+    display: flex; /* Use flexbox to align items horizontally */
+    size-adjust: 100p%;
+    max-width: 100%; /* Maximum width for the image */
+    height: auto; /* Allowing the height to adjust proportionally */
 }
 
 
@@ -180,7 +189,10 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.footer-image {
+    padding: 10px 20px;
 
+}
 
 footer {
     background-color: #343a40;
