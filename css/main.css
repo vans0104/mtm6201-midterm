@@ -68,14 +68,12 @@ header {
 nav ul {
     list-style-type: none;
     font-size: 30px;
+    max-width: 1200px;
     display: flex;
     text-align: center;
+    margin-right: 200px;
 }
 
-nav ul li {
-    margin-left: 200px;
-    text-align: center;
-}
 
 nav ul li a {
     color: #333;
