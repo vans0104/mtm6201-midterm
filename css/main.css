@@ -1,4 +1,7 @@
+@media screen and (min-width: 1200px)
+
 /* Media query for desktop screens */
+
 html{
     min-width: 1200px;
     margin: 10em;
