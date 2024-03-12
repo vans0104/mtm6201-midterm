@@ -157,7 +157,7 @@ article {
     margin-top: 0 ;
 }
 
-.learn-more-button {
+.get-started-button {
     background-color: red; 
     color: #fff; 
     height: 15rem;
@@ -174,7 +174,7 @@ article {
     transition: background-color 0.3s ease; 
 }
 
-.learn-more-button:hover {
+.get-started-button:hover {
     background-color: #218838; /* Darker green color on hover */
 }
 
@@ -197,9 +197,12 @@ section {
 footer {
     background-color: #343a40;
     color: #fff;
-    padding: 10px 20px;
-    position: fixed;
+    padding: 10px 0px;
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+footer{
+    display: block;
 }
