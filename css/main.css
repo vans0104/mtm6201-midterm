@@ -65,10 +65,10 @@ header {
 }
 
 
-nav ul {
+nav ul li {
+    max-width: 1200px;
     list-style-type: none;
     font-size: 30px;
-    max-width: 1200px;
     display: flex;
     text-align: center;
     margin-left: 200px;
