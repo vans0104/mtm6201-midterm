@@ -2,16 +2,12 @@
 
 /* Media query for desktop screens */
 
-html{
-    min-width: 1200px;
-    margin: 10em;
-}
 .container {
     max-width: 1200px;
   }
 
 .container {
-      max-width: 800px; 
+      max-width: 1200px; 
       margin: 0 auto; 
       padding: 0 20px; 
   }
@@ -181,6 +177,23 @@ article {
 main {
     padding: 20px;
 }
+
+span {
+  content: "\2713";
+  color: #218838;
+  border: #218838;
+  border-radius: 5px;
+}
+
+.features-list {
+    font-size: 30px;
+}
+
+.help-list {
+    text-align: center;
+    margin-left: 100px;
+}
+
 
 section {
     margin-bottom: 20px;
